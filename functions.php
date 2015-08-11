@@ -56,6 +56,22 @@ if( function_exists('acf_add_options_page') ) {
 		'title' 	=> 'General',
 		'parent_slug'	=> 'theme-general-settings',
 	));	
+
+	acf_add_options_sub_page(array(
+		'title' 	=> 'Slider',
+		'parent_slug'	=> 'theme-general-settings',
+	));
+
+	acf_add_options_sub_page(array(
+		'title' 	=> 'Bloques Utilitarios',
+		'parent_slug'	=> 'theme-general-settings',
+	));	
+
+	acf_add_options_sub_page(array(
+		'title' 	=> 'Noticias Recientes',
+		'parent_slug'	=> 'theme-general-settings',
+	));	
+
 	acf_add_options_sub_page(array(
 		'title' 	=> 'Portada',
 		'parent_slug'	=> 'theme-general-settings',
@@ -115,6 +131,13 @@ function primalCover() {
 	get_template_part( 'inc/cover/primal-cover');
 }
 
+/* Slider
+ * ------------------------------------------------------------- */
+/* PRIMAL; cover */
+function primalSlider() {
+	get_template_part( 'inc/slider/primal-slider');
+}
+
 /* Bloques
  * ------------------------------------------------------------- */
 /* PRIMAL; bloques */
@@ -126,6 +149,22 @@ function sauteBlocks() {
 	get_template_part( 'inc/blocks/saute-blocks');
 }
 
+/* SAUTE; bloques */
+function recentNews() {
+	get_template_part( 'inc/blocks/recent-news');
+}
+
+function recentEvents() {
+	get_template_part( 'inc/blocks/recent-events');
+}
+
+function socialNetworks() {
+	get_template_part( 'inc/social/social-networks');
+}
+
+function gallery() {
+	get_template_part( 'inc/blocks/gallery');
+}
 /* Texto
  * ------------------------------------------------------------- */
 /* PRIMAL; texto */
@@ -442,15 +481,17 @@ $template_url = get_bloginfo( 'template_url' );
 
 }
 
-//FLEXSLIDER CUSTOM CONFIG
-function flexslider_custom_config_sh() {
+// Flexslider
+function flexslider() {
 $template_url = get_bloginfo( 'template_url' );
-
-	wp_enqueue_style( 'flexslider-style', $template_url .'/inc/flexslider/flexslider.css', '1' );
-
-	wp_enqueue_script( 'flexslider', $template_url .'/inc/flexslider/jquery.flexslider-min.js', array('jquery'), '1.10.2', 1);
+	wp_enqueue_script( 'flexslider', $template_url .'/js/flexslider/jquery.flexslider.js', array('jquery'), '', 1);
 }
 
+
+add_action('wp_enqueue_scripts','flexslider_enqueue');
+function flexslider_enqueue() {
+  wp_enqueue_script('jquery-flexslider', get_bloginfo('template_url').'/js/flexslider/jquery.flexslider.js', array('jquery') );
+}
 // WayPoints
 function waypoints() {
 $template_url = get_bloginfo( 'template_url' );

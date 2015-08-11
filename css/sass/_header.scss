@@ -9,7 +9,7 @@
 	display: block;
 	height: $header-height;
 	// background: $header-bg;
-	background: none;
+	background: white;
 	margin: 0 auto;
 	z-index: 99;
 	position: fixed;
@@ -55,9 +55,10 @@
 		/* Logo */
 		.Header-logo {
 			padding: .5rem 1rem;
-			display: block;
-			float: left;
-			max-width: 320px;
+			display: inline-block;
+			/*float: left;*/
+			/*max-width: 320px;*/
+			width: 20%;
 
 			@media (max-width: $tablet-width) {
 				max-width: 100%;
@@ -66,7 +67,7 @@
 				padding: 1rem 0;
 			}
 			img {
-				max-width: 320px;
+				max-width: 100%;
 				@include transicion();
 
 				@media (max-width: $tablet-width) {
@@ -83,7 +84,7 @@
 			}
 		}
 		/* Botones Sociales */
-		.social {
+/*		.social {
 			float: right;
 			padding: .5rem 1em;	
 
@@ -92,10 +93,12 @@
 				clear: both;
 				text-align: center;
 			}
-		}
+		}*/
 		/* Search Form */
 		#searchform {
-			float: right;
+			/*float: right;*/
+			width: 20%;
+			display: inline-block;
 			padding: .5rem 1em;
 			@include transicion();
 
@@ -108,7 +111,7 @@
 		}
 		
 		 #s {
-			float: right;
+			/*float: right;*/
 			@include transicion();
 			width: 90px;
 		}
@@ -143,6 +146,5 @@
 		.only-search + #access div {
 			padding-right: 205px;
 		}
-		
 	}
 }

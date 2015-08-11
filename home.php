@@ -14,18 +14,25 @@
 
 get_header(); ?>
 
-	<!-- Cover -->
-	<?php primalCover(); // Cover con imágen de fondo, imagen principal y títulos ?>
-	
-	<!-- Bloques -->
-	<?php primalBlocks(); //  Bloques de contenido primordiales ?>
-	<?php sauteBlocks();  //  Bloques de contenido salteados ?>
-	
-	<!-- Texto -->
-	<?php primalText(); //  Bloques de contenido primordiales ?>
-	
-	<!-- Testimonios -->
-	<?php primalTestimony(); //  Bloques de contenido primordiales ?>
+	<!-- Slider -->
+	<section class="u-contenedor u-init-distance">
+		<?php primalSlider(); // Slider básico ?>
+	</section>
 
+	<section class="u-contenedor">
+
+		<div class="RecentNews">
+			<?php recentNews(); //noticias recientes ?>
+		</div>
+
+		<div class="Sidebar">
+			<?php recentEvents(); //eventos recientes ?>
+			<?php socialNetworks(); //sus redes sociales ?>
+		</div>
+	</section>
+
+	<section class="u-contenedor">
+		<?php gallery(); //bloque para galerías ?>
+	</section>
 
 <?php get_footer(); ?>

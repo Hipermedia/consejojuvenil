@@ -12,8 +12,14 @@
     			<a href="/onepage.hipermedia.in/" class="active">Inicio</a>
     		</li>
     		<li class="">
-    			<a href="/onepage.hipermedia.in/pagina-ejemplo/">¿En qué es efectivo?</a>
+    			<a href="/onepage.hipermedia.in/pagina-ejemplo/">Nosotros</a>
     		</li>
+            <li class="">
+                <a href="/onepage.hipermedia.in/pagina-ejemplo/">Noticias</a>
+            </li>
+            <li class="">
+                <a href="/onepage.hipermedia.in/pagina-ejemplo/">Contacto</a>
+            </li>
     	</ul>
     </div>
 </nav>

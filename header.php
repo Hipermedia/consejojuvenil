@@ -36,6 +36,9 @@
  ================================================== --> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
 <!-- CSS
   ================================================== -->
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
@@ -64,13 +67,13 @@
         </a>
 
         <!-- Redes sociales -->
-        <?php primalSocialShare(); ?>
-        
-        <!-- Formulario de búsqueda [Catacterística superior] -->
-        <?php // get_search_form(); ?>
-        
+        <?php //primalSocialShare(); ?>
+
         <!-- Menú principal -->  
         <?php primalNav(); ?>
+        
+        <!-- Formulario de búsqueda [Catacterística superior] -->
+        <?php get_search_form(); ?>
         
     </section>
 </header>

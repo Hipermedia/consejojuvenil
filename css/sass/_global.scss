@@ -62,10 +62,24 @@ h1, h2, h3, h4, h5, h6 {
 		max-width: $desktop-width;
 		width: 100%;
 	}
+
+	.RecentNews {
+		float: left; 
+		width: 65%;
+	}
+
+	.Sidebar { 
+		float: left;
+		width: 35%;
+	}
 }
 .u-contenedorCompleto {
 	width: 100%;
 	
+}
+
+.u-init-distance {
+	padding-top: $header-height;
 }
 
 /* = Contenido

@@ -1,0 +1,12 @@
+.RecentEvents-contenido .RecentEvents-event {
+  width: 100%;
+  clear: both;
+}
+
+.RecentEvents-contenido .RecentEvents-event .RecentEvents-event-image {
+  width: 240%;
+  height: 240px;
+  background-image: url("http://lorempixel.com/output/animals-q-c-250-250-7.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}

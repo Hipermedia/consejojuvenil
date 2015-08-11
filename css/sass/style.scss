@@ -20,6 +20,7 @@ Text Domain: shbase
 @import "support/_font-awesome.scss"; /* Bootstrap */
 @import "support/bootstrap-theme.scss"; /* Bootstrap Theme */
 @import "support/_fonts.scss"; /* Open Sans */
+@import "support/_flexslider.scss";
 
 // Bootstrap Material Desing
 @import "support/bootstrap-material/_material.scss"; /* Bootstrap Material Desing */
@@ -42,8 +43,11 @@ Text Domain: shbase
 @import "blocks/_text.scss";
 @import "blocks/_nav.scss";
 @import "blocks/_redes_sociales.scss";
-
-
+@import "blocks/_slider.scss";
+@import "blocks/_recent-news.scss";
+@import "blocks/_recent-events.scss";
+@import "blocks/_gallery.scss";
+@import "blocks/_social-networks.scss";
 
 /* La personalización directa comienza aquí
 -------------------------------------------------------------- */
