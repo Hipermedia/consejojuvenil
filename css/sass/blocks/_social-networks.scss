@@ -1,14 +1,32 @@
 .SocialNetworks-contenido {
+	overflow: hidden;
 
 	.SocialNetworks-blockTitle {
-
+		background: black;
+		color: white;
+		font-size: 35px;
+		padding: 1.5rem 0 1.5rem 1rem;
+		margin-bottom: 1rem;
 	}
 
 	.SocialNetworks-network {
+		background: #EBEBEB;
 		width: 25%;
 		display: block;
 		float: left;
 		text-align: center;
 		font-size: 3rem;
+		padding: 1.5rem 1rem;
+
+		i {
+			background: white;
+			padding: .8rem;
+			width: 100%;
+		}
+
+		.fa-facebook { color: #3A5795; }
+		.fa-twitter { color: #55ACEE; }
+		.fa-google-plus { color: #CF4432; }
+		.fa-pinterest { color: #BD2126; }
 	}
 }
