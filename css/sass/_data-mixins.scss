@@ -31,7 +31,7 @@ $divider-color:        	#B6B6B6;	// color neutral, generalmente usado para divis
 
 $social-btn-color: 		#666666;	// color base de los botones sociales
 
-$nav-text-color:			$main-color;		
+$nav-text-color:			#000;		
 $nav-bg-text-color:			none;
 $nav-text-color-hover:		$main-color-text;
 $nav-bg-text-color-hover: 	$main-color;
@@ -41,7 +41,7 @@ $nav-bg-text-color-active:	none;
 
 /* Tamaños
 ------------*/
-$header-height: 120px;
+$header-height: 150px;
 $desktop-width: 1200px;
 $tablet-width: 768px;
 $smaller-width: 560px;

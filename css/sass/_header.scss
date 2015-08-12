@@ -30,7 +30,7 @@
 	}
 
 	&--tiny {
-		height: 60px;
+		height: 100px;
 		background: $header-bg;
 
 		@media (max-width: $tablet-width) {
@@ -54,10 +54,8 @@
 
 		/* Logo */
 		.Header-logo {
-			padding: .5rem 1rem;
+			/*padding: .5rem 1rem;*/
 			display: inline-block;
-			/*float: left;*/
-			/*max-width: 320px;*/
 			width: 20%;
 
 			@media (max-width: $tablet-width) {
@@ -113,7 +111,9 @@
 		 #s {
 			/*float: right;*/
 			@include transicion();
-			width: 90px;
+			/*width: 90px;*/
+			box-shadow: none;
+			border-color: black;
 		}
 		#s:focus {
 			background-color: #f9f9f9;
