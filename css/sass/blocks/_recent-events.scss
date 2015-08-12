@@ -1,11 +1,20 @@
 .RecentEvents-contenido {
+	padding-left: 1rem;
+
+	p,h2 { margin: 0; }
 
 	.RecentEvents-blockTitle {
+		margin: 0 0 1rem 0;
+		padding: 1rem 0;
+		font-size: 2rem;
+		border-top: 1px #C7C7C7 solid;
+		border-bottom: 1px #C7C7C7 solid;
+		font-weight: 300;
 	}
 
 	.RecentEvents-event {
 		width: 100%;
-		clear: both;
+		margin-bottom: 1.5rem;
 
 		.RecentEvents-event-image {
 			width: 100%;
@@ -17,11 +26,13 @@
 		}
 
 		.RecentEvents-event-category {
-
+			color: #999999;
+			padding-top: .5rem;
 		}
 
 		.RecentEvents-event-title {
-
+			font-size: 40px;
+			padding-top: 1rem;
 		}
 	}
 }
