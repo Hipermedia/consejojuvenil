@@ -10,11 +10,21 @@
 		border-top: 1px #C7C7C7 solid;
 		border-bottom: 1px #C7C7C7 solid;
 		font-weight: 300;
+		@media (max-width: $smaller-width) {
+			text-align: center;
+			line-height: 1.3;
+		}
 	}
 
 	.RecentEvents-event {
 		width: 100%;
 		margin-bottom: 1.5rem;
+		@media (max-width: $tablet-width) {
+			margin-bottom: 2rem;
+		}
+		@media (max-width: $smaller-width) {
+			text-align: center;
+		}
 
 		.RecentEvents-event-image {
 			width: 100%;
@@ -23,6 +33,12 @@
 			background-image: url('http://lorempixel.com/output/animals-q-c-250-250-7.jpg');
 			background-size: 100%;
 			background-repeat: no-repeat;
+			@media (max-width: $tablet-width) {
+				background-position: center;
+			}
+			@media (max-width: $smaller-width) {
+				height: 200px;
+			}
 		}
 
 		.RecentEvents-event-category {

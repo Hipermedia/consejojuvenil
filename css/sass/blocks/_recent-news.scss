@@ -1,5 +1,8 @@
 .RecentNews-contenido {
 	padding-right: 1rem;
+	@media (max-width: $smaller-width) {
+		padding: 0;
+	}
 
 	/*global*/
 	p { margin: 0; }
@@ -11,6 +14,10 @@
 		border-top: 1px #C7C7C7 solid;
 		border-bottom: 1px #C7C7C7 solid;
 		font-weight: 300;
+		@media (max-width: $smaller-width) {
+			text-align: center;
+			line-height: 1.3;
+		}
 	}
 
 	.RecentNews-new {
@@ -26,12 +33,21 @@
 			background-image: url('http://lorempixel.com/output/animals-q-c-250-250-7.jpg');
 			background-size: 100%;
 			background-repeat: no-repeat;
+			@media (max-width: $smaller-width) {
+				width: 100%;
+				height: 200px;
+				background-position: center;
+			}
 		}
 
 		.u-wrapper {
 			width: 65%;
 			float: left;
 			padding: 0 1rem;
+			@media (max-width: $smaller-width) {
+				width: 100%;
+				text-align: center;
+			}
 
 			.RecentNews-new-date {
 				color: #999999;

@@ -61,16 +61,25 @@ h1, h2, h3, h4, h5, h6 {
 	@media (max-width: $desktop-width) {
 		max-width: $desktop-width;
 		width: 100%;
+		padding: 0 1rem;
 	}
 
 	.RecentNews {
 		float: left; 
 		width: 65%;
+		@media (max-width: $tablet-width) {
+			width: 100%;
+			float: none;
+		}
 	}
 
 	.Sidebar { 
 		float: left;
 		width: 35%;
+		@media (max-width: $tablet-width) {
+			width: 100%;
+			float: none;
+		}
 	}
 }
 .u-contenedorCompleto {
@@ -80,6 +89,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .u-init-distance {
 	padding-top: $header-height;
+	@media (max-width: $tablet-width) {
+		padding: 0;
+	}
 }
 
 /* = Contenido

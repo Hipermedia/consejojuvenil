@@ -17,6 +17,9 @@
 		text-align: center;
 		font-size: 3rem;
 		padding: 1.5rem 1rem;
+		@media (max-width: $smaller-width) {
+			width: 50%;
+		}
 
 		i {
 			background: white;

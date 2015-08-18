@@ -69,7 +69,10 @@
 				@include transicion();
 
 				@media (max-width: $tablet-width) {
-					width: 75%;
+					width: 40%;
+				}
+				@media (max-width: $smaller-width) {
+					width: 20%;
 				}
 				&.tiny {
 					max-width: 144px;
