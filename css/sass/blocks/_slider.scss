@@ -17,31 +17,56 @@
 	#slider.flexslider {
 		margin: 0;
 		border: none;
+		margin-bottom: .5rem;
 
 		.slides {
 
-			img {
-				max-height: 500px;
+			li {
+				position: relative;
+
+				img {
+					max-height: 500px;
+				}
+
+				.flex-caption {
+					position: absolute;
+				  	width: 100%;
+				  	padding: 2%;
+				  	left: 0;
+				  	bottom: 0;
+				  	background: rgba(0,0,0,.5);
+				  	color: #fff;
+				  	text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+				  	font-size: 14px;
+				  	line-height: 18px;
+				  	margin: 0;
+				}
 			}
+		}
+
+		.flex-direction-nav {
+
 		}
 	}
 
 	#carousel.flexslider {
 		border: 0;
 		margin: 0;
-		margin-top: -158px;
+		margin: 0px;
 		@media (max-width: $desktop-width) {
 			margin-top: 0;
 		}
 
 		.slides {
+			transform: none !important;
 			@media (max-width: $desktop-width) {
 				width: 100% !important;
-				transform: none !important;
 			}
 		}
 		
 		li {
+			height: 100px;
+			overflow: hidden;
 			@media (max-width: $desktop-width) {
 				width: 25% !important;
 			}
@@ -51,7 +76,7 @@
 
 .BloquesAside-contenido {
 	float: left;
-	width: 25%;
+	width: 30%;
 	@media (max-width: $desktop-width) {
 		width: 28%;
 		margin-left: 2%;
@@ -65,10 +90,11 @@
 
 	.BloqueAside {
 		width: 100%;
-		height: 200px;
-		background: peru;
-		min-height: 240px;
-		margin-left: 5%;
+		height: 240px;
+		padding-left: 5%;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: top center;
 		@media (max-width: $desktop-width) {
 			margin: 0;
 		}
@@ -80,6 +106,44 @@
 		@media (max-width: $smaller-width) {
 			width: 98%;
 			float: none;
+		}
+
+		&:hover {
+
+			figcaption {
+				opacity: 1;
+				background: rgba(0,0,0,0.5);
+			}
+		}
+
+		a {
+			display: block;
+			width: 100%;
+			height: 100%;
+
+			figure {
+				width: 100%;
+				position: relative;
+				max-height: 100%;
+
+				img {
+					width: 100%;
+					min-height: 100%;
+					position: absolute;
+				}
+
+				figcaption {
+					opacity: 0;
+					width: 100%;
+					position: absolute;
+					text-align: center;
+					color: #fff;
+					padding: 2rem .5rem;
+					font-size: 2rem;
+					line-height: 1.2;
+					@include transicion();
+				}
+			}
 		}
 	}
 

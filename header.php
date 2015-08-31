@@ -56,7 +56,7 @@
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body style="background-image: url('<?php the_field('bgSite', 'option'); ?>')" <?php body_class(); ?>>
 
 <header id="header" class="Header" role="banner" >
     <section class="Header-contenido">

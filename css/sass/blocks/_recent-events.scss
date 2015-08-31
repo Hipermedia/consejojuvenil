@@ -28,9 +28,8 @@
 
 		.RecentEvents-event-image {
 			width: 100%;
-			height: 300px;
+			height: 200px;
 			display: block;
-			background-image: url('http://lorempixel.com/output/animals-q-c-250-250-7.jpg');
 			background-size: 100%;
 			background-repeat: no-repeat;
 			@media (max-width: $tablet-width) {
@@ -49,6 +48,15 @@
 		.RecentEvents-event-title {
 			font-size: 40px;
 			padding-top: 1rem;
+
+			.RecentEvents-event-titleLink {
+				color: $text-color;
+				@include transicion();
+
+				&:hover {
+					color: #AAD03F;
+				}
+			}
 		}
 	}
 }

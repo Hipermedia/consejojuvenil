@@ -30,8 +30,12 @@
 		}
 
 
-	  a { color: $main-color; background: $main-color-text; }
-	  a:hover { color: $main-color-text; background: $main-color; }
+	  a { /*color: $main-color; background: $main-color-text;*/ }
+	  a:hover { 
+	  	color: $main-color-text; 
+	  	background: $main-color;
+	  	border-bottom: 1px $main-color-text dotted;  
+	  }
 	  .current_page_item > a { color: $main-color; }
 	  .current_page_item > a:hover { color: $main-color-text; }
 	}
@@ -94,7 +98,7 @@
 
 	a::after {
 		margin-left: .3rem;
-		content: "/";
+		/*content: "/";*/
 	}
 
 	/* Clase del botón del menú que se muestra en pantallas pequeñas */

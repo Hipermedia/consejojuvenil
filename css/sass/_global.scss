@@ -17,6 +17,10 @@ body {
 	line-height: 1.5em; /* 24px */
 	background: $body-bg;
 	margin: 0;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-attachment: fixed;
 }
 /* Links */
 a {
@@ -56,7 +60,9 @@ h1, h2, h3, h4, h5, h6 {
 	overflow: hidden; 
 	clear: both;
 	width: $desktop-width;
-	margin: 0 auto 2rem auto;
+	padding: 0 1.5rem 2rem 1.5rem;
+	margin: 0 auto;
+	background: $body-bg;
 
 	@media (max-width: $desktop-width) {
 		max-width: $desktop-width;

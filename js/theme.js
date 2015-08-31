@@ -33,11 +33,14 @@ jQuery(document).ready(function($) {
 	$('#carousel').flexslider({
 	  animation: "slide",
 	  controlNav: false,
+	  directionNav: false,
 	  animationLoop: false,
 	  slideshow: false,
 	  itemWidth: 210,
 	  itemMargin: 5,
-	  asNavFor: '#slider'
+	  asNavFor: '#slider',
+	  prevText: "",
+	  nextText: ""
 	});
 	
 	$('#slider').flexslider({
@@ -45,7 +48,9 @@ jQuery(document).ready(function($) {
 	  controlNav: false,
 	  animationLoop: false,
 	  slideshow: false,
-	  sync: "#carousel"
+	  sync: "#carousel",
+	  prevText: "",
+	  nextText: ""
 	});
 
 });

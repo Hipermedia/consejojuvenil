@@ -1,45 +1,53 @@
 <div class="PrimalSlider-contenido">
-	<div id="slider" class="flexslider">
-	  <ul class="slides">
-	    <li>
-	      <img src="http://www.androidguys.com/wp-content/uploads/2013/07/wallpaper_29_the_triangles_by_zpecter.jpg" />
-	    </li>
-	    <li>
-	      <img src="http://www.androidguys.com/wp-content/uploads/2013/07/wallpaper_29_the_triangles_by_zpecter.jpg" />
-	    </li>
-	    <li>
-	      <img src="http://www.androidguys.com/wp-content/uploads/2013/07/wallpaper_29_the_triangles_by_zpecter.jpg" />
-	    </li>
-	    <li>
-	      <img src="http://www.androidguys.com/wp-content/uploads/2013/07/wallpaper_29_the_triangles_by_zpecter.jpg" />
-	    </li>
-	  </ul>
-	</div>
+	<?php if(have_rows('slider_ce', 'option')) : ?>
+		<div id="slider" class="flexslider">
+		  <ul class="slides">
+		  	<?php while(have_rows('slider_ce', 'option')) : the_row(); ?>
+		    	<li>
+		    	  <img src="<?php the_sub_field('imagen', 'option'); ?>" />
+		    	  	<?php if(get_sub_field('titulo')) : ?>
+		    	  		<div class="flex-caption">
+		    	  			<h2><?php the_sub_field('titulo', 'option'); ?></h2>
+		    	  			<p><?php the_sub_field('descripcion', 'option'); ?></p>
+		    	  		</div>
+		    		<?php endif; ?>
+		    	</li>
+			<?php endwhile; ?>
+		  </ul>
+		</div>
+	<?php endif; ?>
 
 	<div id="carousel" class="flexslider">
-	  <ul class="slides">
-	    <li>
-	      <img src="http://lorempixel.com/output/sports-q-c-640-480-5.jpg" />
-	    </li>
-	    <li>
-	      <img src="http://lorempixel.com/output/sports-q-c-640-480-5.jpg" />
-	    </li>
-	    <li>
-	      <img src="http://lorempixel.com/output/sports-q-c-640-480-5.jpg" />
-	    </li>
-	    <li>
-	      <img src="http://lorempixel.com/output/sports-q-c-640-480-5.jpg" />
-	    </li>
-	  </ul>
+	  	<ul class="slides">
+	  		<?php while(have_rows('slider_ce', 'option')) : the_row(); ?>
+	  		 	<li class="u-custom-li">
+	  		 	  <img src="<?php the_sub_field('imagen', 'option'); ?>" />
+	  		 	</li>
+	  		<?php endwhile; ?>
+	  	</ul>
 	</div>
 </div>
 
 <aside class="BloquesAside-contenido">
 	<div class="BloqueAside">
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, hic.		
+		<a href="<?php the_field('sliderAside1url', 'option'); ?>">
+			<figure>
+				<img src="<?php the_field('sliderAside1', 'option'); ?>" alt="">
+				<figcaption>
+					<p><?php the_field('sliderAside1titulo', 'option'); ?></p>
+				</figcaption>
+			</figure>
+		</a>
 	</div>
 
 	<div class="BloqueAside">
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque incidunt hic consequuntur quas eius nobis?
+		<a href="<?php the_field('sliderAside2url', 'option'); ?>">
+			<figure>
+				<img src="<?php the_field('sliderAside2', 'option'); ?>" alt="">
+				<figcaption>
+					<p><?php the_field('sliderAside2titulo', 'option'); ?></p>
+				</figcaption>
+			</figure>	
+		</a>
 	</div>
 </aside>		
